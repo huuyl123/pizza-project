@@ -1,0 +1,14 @@
+.container {
+  height: 100vh;
+}
+.textContainer {
+  text-align: center;
+}
+
+/* .text {
+    color: white!important;
+} */
+
+.photoLg {
+  width: 100% !important;
+}
