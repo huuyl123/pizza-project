@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row, Typography, Button } from "antd";
+import Link from "next/link";
 import styles from "./Homepage.module.css";
 import Logo from "../Logo/Logo";
 
@@ -27,9 +28,11 @@ function HomePage() {
       </Row>
       <Row>
         <Col xs={24} md={12} lg={10} xl={12}>
-          <Button size="large" className={styles.buttonDelivery}>
-            Delievry
-          </Button>
+          <Link href="/delivery">
+            <Button size="large" className={styles.buttonDelivery}>
+              <p>Delivery</p>
+            </Button>
+          </Link>
         </Col>
         <Col xs={24} md={12} lg={10} xl={12}>
           <Button size="large" className={styles.buttonTakeOut}>

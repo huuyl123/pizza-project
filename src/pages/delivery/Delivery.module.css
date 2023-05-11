@@ -1,0 +1,22 @@
+.container {
+  background-color: white;
+  height: 100vh;
+  color: black;
+}
+
+.pageHeader {
+  border-bottom: 1px solid black;
+}
+
+.inputForm {
+  margin-top: 1em;
+}
+
+.buttonBack {
+  width: 100%;
+}
+
+.buttonContinue {
+  width: 100%;
+  background-color: yellow;
+}
