@@ -1,9 +1,12 @@
 import React from "react";
-import { Typography, Row, Col, Radio } from "antd";
+import { Typography, Row, Col, Radio, TimePicker } from "antd";
 import { useState } from "react";
 import styles from "./Delivery.module.css";
+import dayjs from "dayjs";
 
 const { Title, Text } = Typography;
+
+const format = "HH:mm";
 
 export default function Delivery() {
   //Set value for radio
@@ -26,6 +29,16 @@ export default function Delivery() {
             <Radio value={1}>As soon as possible</Radio>
             <Radio value={2}>Later</Radio>
           </Radio.Group>
+          {value === 2 ? (
+            <div>
+              <TimePicker
+                defaultValue={dayjs("12:08", format)}
+                format={format}
+              />
+            </div>
+          ) : (
+            <div></div>
+          )}
         </Col>
       </Row>
     </div>
