@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row, Typography, Button } from "antd";
+import Link from "next/link";
 import styles from "./Homepage.module.css";
 import Logo from "../Logo/Logo";
 
