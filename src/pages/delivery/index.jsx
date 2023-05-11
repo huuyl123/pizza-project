@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Row, Col, Radio, TimePicker } from "antd";
+import { Typography, Row, Col, Radio, TimePicker, Input } from "antd";
 import { useState } from "react";
 import styles from "./Delivery.module.css";
 import dayjs from "dayjs";
@@ -43,6 +43,10 @@ export default function Delivery() {
           ) : (
             <div></div>
           )}
+          <p className="mt-1">Please enter your desired delivery time!</p>
+          <Input placeholder="Street" className={styles.inputForm} />
+          <Input placeholder="House number" className={styles.inputForm} />
+          <Input placeholder="Postal code" className={styles.inputForm} />
         </Col>
       </Row>
     </div>
