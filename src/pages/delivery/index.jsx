@@ -1,8 +1,8 @@
 import React from "react";
-import { Typography, Row, Col, Radio, TimePicker, Input } from "antd";
+import { Typography, Row, Col, Radio, TimePicker, Input, Button } from "antd";
 import { useState } from "react";
 import styles from "./Delivery.module.css";
-import dayjs from "dayjs";
+import Router from "next/router";
 
 const { Title, Text } = Typography;
 
@@ -17,6 +17,7 @@ export default function Delivery() {
     setValue(e.target.value);
   };
 
+  //Hours for disabledHours in Timepicker
   const disableHours = [0, 1, 2, 3, 4, 5, 6, 7, 21, 22, 23, 24];
 
   return (
@@ -47,6 +48,19 @@ export default function Delivery() {
           <Input placeholder="Street" className={styles.inputForm} />
           <Input placeholder="House number" className={styles.inputForm} />
           <Input placeholder="Postal code" className={styles.inputForm} />
+          <Row className="mt-1">
+            <Col span={12}>
+              <Button
+                onClick={() => Router.back()}
+                className={styles.buttonBack}
+              >
+                Go back
+              </Button>
+            </Col>
+            <Col span={12}>
+              <Button className={styles.buttonContinue}>Continue</Button>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </div>

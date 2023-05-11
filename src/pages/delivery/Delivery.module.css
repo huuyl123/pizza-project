@@ -11,3 +11,12 @@
 .inputForm {
   margin-top: 1em;
 }
+
+.buttonBack {
+  width: 100%;
+}
+
+.buttonContinue {
+  width: 100%;
+  background-color: yellow;
+}
