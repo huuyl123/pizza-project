@@ -1,5 +1,7 @@
-.HeaderPage {
-  color: white !important;
+.container {
+  background-color: white;
 }
 
-
+.pageHeader {
+  border-bottom: 1px solid black;
+}
