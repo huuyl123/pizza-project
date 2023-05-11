@@ -1,15 +1,13 @@
 .container {
   height: 100vh;
+  color: white;
 }
 
 .textContainer {
   text-align: center;
 }
 
-/* .text {
-    color: white!important;
-} */
-
-.photoLg {
-  width: 100% !important;
+.logo {
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
