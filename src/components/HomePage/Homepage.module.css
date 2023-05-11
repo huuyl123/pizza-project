@@ -1,14 +1,34 @@
 .container {
   height: 100vh;
+  color: white;
 }
+
 .textContainer {
   text-align: center;
 }
 
-/* .text {
-    color: white!important;
-} */
+.logo {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
 
-.photoLg {
-  width: 100% !important;
+.textColor {
+  color: white !important;
+}
+
+.buttonDelivery {
+  width: 200px !important;
+  height: 250px !important;
+  background-color: green;
+  color: white;
+  float: right;
+  margin-right: 1em;
+}
+
+.buttonTakeOut {
+  width: 200px !important;
+  height: 250px !important;
+  background-color: pink;
+  color: white;
+  margin-left: 1em;
 }

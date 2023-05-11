@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import { Col, Row } from "antd";
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <div>
+    <div className={styles.container}>
       <Row justify="end">
         <Col span={3}>
           <Link href="/data-protection">Data Protection</Link>
