@@ -9,7 +9,7 @@ function HomePage() {
     <div
       className={styles.container}
       style={{
-        backgroundImage: "url(/landing-page/background-landing-page.png",
+        backgroundImage: "url(/landing-page/background-landing-page.jpg",
       }}
     >
       <Row justify="center">
@@ -19,18 +19,22 @@ function HomePage() {
               <Logo />
             </Col>
           </Row>
-          <Title className={styles.text}>ONLINE ORDER</Title>
-          <Title className={styles.text} level={3}>
+          <Title className={styles.textColor}>ONLINE ORDER</Title>
+          <Title className={styles.textColor} level={3}>
             How do you want to recceive your order ?
           </Title>
         </Col>
       </Row>
       <Row>
-        <Col>
-          <Button size="large">Delievry</Button>
+        <Col xs={24} md={12} lg={10} xl={12}>
+          <Button size="large" className={styles.buttonDelivery}>
+            Delievry
+          </Button>
         </Col>
-        <Col>
-          <Button size="large">Take out</Button>
+        <Col xs={24} md={12} lg={10} xl={12}>
+          <Button size="large" className={styles.buttonTakeOut}>
+            Take out
+          </Button>
         </Col>
       </Row>
     </div>
