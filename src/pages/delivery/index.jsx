@@ -17,6 +17,8 @@ export default function Delivery() {
     setValue(e.target.value);
   };
 
+  const disableHours = [0, 1, 2, 3, 4, 5, 6, 7, 21, 22, 23, 24];
+
   return (
     <div className={styles.container}>
       <Row justify="center">
@@ -32,8 +34,10 @@ export default function Delivery() {
           {value === 2 ? (
             <div>
               <TimePicker
-                defaultValue={dayjs("12:08", format)}
                 format={format}
+                size="large"
+                minuteStep={15}
+                disabledHours={() => disableHours}
               />
             </div>
           ) : (
