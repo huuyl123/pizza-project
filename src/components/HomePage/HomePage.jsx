@@ -35,9 +35,11 @@ function HomePage() {
           </Link>
         </Col>
         <Col xs={24} md={12} lg={10} xl={12}>
+          <Link href="/pickup">
           <Button size="large" className={styles.buttonTakeOut}>
-            Take out
+            Pick up
           </Button>
+          </Link>
         </Col>
       </Row>
     </div>
