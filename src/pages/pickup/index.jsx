@@ -18,14 +18,14 @@ export default function Pickup() {
   };
 
   //Hours for disabledHours in Timepicker
-  const disableHours = [0, 1, 2, 3, 4, 5, 6, 7, 21, 22, 23, 24];
+  const disableHours = [0, 1, 2, 3, 4, 5, 6, 7, 8, 21, 22, 23, 24];
   
   return (
     <div className={styles.container}>
       <Row justify="center">
         <Col sx={20} md={12} lg={8} xl={8}>
           <Title level={2} className={styles.pageHeader}>
-            Delivery
+            Pick up
           </Title>
           <Title level={5}>When would you like to receive your order?</Title>
           <Radio.Group onChange={onChange} value={value}>
@@ -45,9 +45,12 @@ export default function Pickup() {
             <div></div>
           )}
           <p className="mt-1">Please enter your desired delivery time!</p>
-          <Input placeholder="Street" className={styles.inputForm} />
-          <Input placeholder="House number" className={styles.inputForm} />
-          <Input placeholder="Postal code" className={styles.inputForm} />
+          <div className={styles.textAddress}>
+            <p>Pick-up address:</p>
+            <p>FoodyFoody Koblenz,</p>
+            <p>Löhrstrasse 60</p>
+            <p>56068 Koblenz</p>
+          </div>
           <Row className="mt-1">
             <Col span={12}>
               <Button
