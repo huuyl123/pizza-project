@@ -36,7 +36,7 @@ function HomePage() {
         </Col>
         <Col xs={24} md={12} lg={10} xl={12}>
           <Button size="large" className={styles.buttonTakeOut}>
-            Take out
+            Pick up
           </Button>
         </Col>
       </Row>
